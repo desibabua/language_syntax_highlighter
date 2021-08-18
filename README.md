@@ -1,9 +1,10 @@
-# Mal extension
-It's a make a lisp (mal) syntax highlighter extension for visual studio code
+# Language syntax highlighter extension
+It's a highly customizable VScode extension for syntax highlighting.
+currently it's specified according to mal(make a lisp) language (unkown lisp lang).
 
 ## Getting started
-1. copy this folder inside ~/.vscode/extensions/
-2. add this code inside workspace's .vscode/settings
+1. Copy this folder inside ~/.vscode/extensions/
+2. Add this code inside workspace's .vscode/settings
   ```
     "editor.tokenColorCustomizations": {
       "textMateRules": [
@@ -22,4 +23,4 @@ It's a make a lisp (mal) syntax highlighter extension for visual studio code
       ]
   }
 ```
-3. restart the visual studio code
+3. Restart the visual studio code
