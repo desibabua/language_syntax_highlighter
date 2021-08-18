@@ -1,0 +1,25 @@
+{
+    "name": "mal-syntax-highlighter",
+    "displayName": "mal-syntax-highlighter",
+    "description": "Syntax highlighter for Make a Lisp (mal)",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.59.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "mal",
+            "aliases": ["mal"],
+            "extensions": [".mal"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "mal",
+            "scopeName": "source.mal",
+            "path": "./syntaxes/mal.tmLanguage.json"
+        }]
+    }
+}

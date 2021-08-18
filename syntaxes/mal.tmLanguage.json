@@ -1,0 +1,53 @@
+{
+	"scopeName": "source.mal",
+	"name": "mal",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#boolean"
+		}
+	],
+	"repository": {
+		"comments": {
+			"patterns": [
+					{
+							"name": "language.comments.mal",
+							"match": ";;.*$"
+					}
+	]
+	},
+		"boolean": {
+			"patterns": [
+					{
+							"name": "language.boolean.mal",
+							"match": "\\b(true|false)\\b"
+					}
+	]
+	},
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.mal",
+				"match": "\\b(def|defmacro|let|fn|if|when|do|while|for|return)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.mal",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.mal",
+					"match": "\\\\."
+				}
+			]
+		}
+	}
+}
